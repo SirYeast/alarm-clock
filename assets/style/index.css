@@ -1,0 +1,54 @@
+@import "reset.css";
+
+:root {
+    --primary-color: #1ec756;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+#time {
+    margin-bottom: 30px;
+    font-size: 92px;
+    transition: color 0.2s;
+}
+
+#indicator {
+    display: none;
+    margin-bottom: 30px;
+}
+
+#alarm-time {
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid rgb(0 0 0 / 0.5);
+    border-radius: 10px;
+}
+
+#alarm-time:focus {
+    border-color: var(--primary-color);
+}
+
+#set-alarm {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+#set-alarm:hover {
+    background-color: #128e3b;
+}
+
+.active {
+    color: var(--primary-color);
+}
